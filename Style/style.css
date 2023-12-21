@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.background-container {
+  background-image: url(../Public/Login_Page/TR-tr-20231120-popsignuptwoweeks-perspective_alpha_website_small.jpg);
+  width: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.site-container {
+  width: 100%;
+  min-height: 150vh;
+  background-color: rgba(0, 0, 0, 0.479);
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo {
+  transition: 0.5s;
+  display: flex;
+}
+
+.logo img {
+  transition: 0.5s;
+  width: 200px;
+}
+
+.login-container {
+  width: 450px;
+  min-height: 650px;
+  background-color: rgba(0, 0, 0, 0.699);
+  margin: auto;
+  padding: 4rem 4.5rem;
+  border-radius: 4px;
+  margin-bottom: 6rem;
+  transition: 0.5s;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.login-content .h1 {
+  align-self: baseline;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+/* 
+
+
+
+
+
+
+
+
+
+*/
+/* input */
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-content {
+  width: 100%;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.label-content {
+  position: absolute;
+  left: 1.25rem;
+  top: 0.8rem;
+  color: #8c8c8c;
+  z-index: 1;
+  transition: 0.1s;
+  cursor: text;
+  font-size: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 1.25rem;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #333;
+  font-size: 1.25rem;
+  border-radius: 5px;
+  cursor: text;
+  transition: 0.2s;
+  padding-bottom: 0.3rem;
+}
+
+.input:focus {
+  background-color: #555555;
+}
+
+.label-content.active {
+  transform: translateY(-0.6rem);
+  font-size: 0.7rem;
+  color: #ffffff77;
+}
+
+.alert-email,
+.alert-password {
+  padding: 15px;
+  padding-top: 0;
+  color: #e87c03;
+  font-size: 12px;
+  display: none;
+}
+
+.show-hide {
+  background-color: transparent;
+  border: none;
+  color: #8c8c8c;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 8px;
+  display: none;
+}
+
+.show-hide.active {
+  display: block;
+}
+
+.sign-in-container {
+  width: 100%;
+}
+
+.sign-in {
+  width: 100%;
+  padding-bottom: 0.8rem;
+  padding-top: 0.8rem;
+  background-color: #e50914;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-top: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.bottom-of-sign-in {
+  display: flex;
+  justify-content: space-between;
+  color: #b3b3b3;
+  font-size: 13px;
+}
+
+.remember-me-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remember-me-text {
+  cursor: pointer;
+}
+
+.remember-me-button {
+  appearance: none;
+  -webkit-appearance: none;
+  margin-right: 3px;
+  width: 15px;
+  height: 15px;
+  background-color: gray;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.remember-me-button::after {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  display: none;
+}
+
+.remember-me-button:checked {
+  background-color: white;
+}
+
+.remember-me-button:checked::after {
+  display: block;
+}
+
+.need-help {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+
+.need-help:hover {
+  text-decoration: underline;
+}
+/* 
+
+
+
+*/
+.description-container {
+  width: 100%;
+}
+
+.new-to-netflix {
+  color: #737373;
+  font-size: 1rem;
+  margin-top: 4rem;
+}
+
+.new-to-netflix a {
+  color: white;
+  text-decoration: none;
+  margin-left: 2px;
+}
+
+.new-to-netflix a:hover {
+  text-decoration: underline;
+}
+
+.learn-more {
+  font-size: 13px;
+  margin-top: 1rem;
+  color: #8c8c8c;
+}
+
+.learn-more a {
+  color: #0071eb;
+  text-decoration: none;
+}
+
+.learn-more a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  padding: 2rem 5rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.699);
+  flex: 1;
+  color: #737373;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content p {
+  margin-bottom: 2rem;
+}
+
+.footer-content p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-content p a:hover {
+  text-decoration: underline;
+}
+
+.link-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link-box li {
+  min-width: 100px;
+  width: 25%;
+  font-size: 13px;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.language-box {
+  margin-top: 1rem;
+  width: 100%;
+  position: relative;
+}
+
+.world-icon::before {
+  position: absolute;
+  content: "\f0ac";
+  bottom: 20.5px;
+  left: 9px;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}
+
+.arrow-icon::before {
+  position: absolute;
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+  bottom: 20.5px;
+  left: 5.6rem;
+}
+
+.language-box .language {
+  height: 60px;
+  width: 120px;
+  padding-left: 2.4rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background-color: #000;
+  border: 1px solid #333;
+  color: #737373;
+}
+
+.language * {
+  color: #737373;
+}

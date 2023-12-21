@@ -1,0 +1,39 @@
+@media screen and (max-width: 760px) {
+  .background-container {
+    background-image: none;
+    background-color: black;
+  }
+
+  .login-container {
+    transition: 0.5s;
+    margin: 0;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    margin-top: 2rem;
+    min-height: 600px;
+  }
+
+  .login-content .h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .site-container {
+    min-height: max-content;
+  }
+
+  .site-container .nav .logo {
+    margin: auto;
+  }
+
+  .footer {
+    padding-top: 0;
+    padding-bottom: 3rem;
+    flex: 0;
+  }
+
+  .language-box .language option {
+    height: 10px;
+  }
+}

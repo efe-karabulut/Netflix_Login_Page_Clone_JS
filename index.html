@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./Style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./Style/responsible.css">
+</head>
+
+<body>
+
+    <div class="background-container">
+        <div class="site-container">
+
+            <div class="nav">
+                <div class="logo">
+                    <img src="./Public/Login_Page/Netflix_Logo_PMS.png" alt="netflix_logo">
+                </div>
+            </div>
+
+            <div class="login-container">
+                <div class="login-content">
+                    <span class="h1">Sign In</span>
+                    <div id="inputContainer" class="input-container">
+                        <!-- e-mail -->
+                        <label class="input-content">
+                            <input id="email" type="text" class="e-mail input" autocomplete="off">
+                            <label id="labelEmail" class="label-content">Email or phone number</label>
+                        </label>
+                        <p id="alertEmail" class="alert-email">Please enter a valid email address or phone number.</p>
+                        <!-- password -->
+                        <label class="input-content">
+                            <input id="password" type="password" class="password input" autocomplete="off">
+                            <label id="labelPassword" class="label-content">Password</label>
+                            <button id="showHide" class="show-hide">SHOW</button>
+                        </label>
+                        <p id="alertPassword" class="alert-password">Your password must contain between 4 and 60
+                            characters.</p>
+                    </div>
+
+                    <div class="sign-in-container">
+                        <div class="sign-in-button-container">
+                            <button class="sign-in">Sign in</button>
+                        </div>
+                        <div class="bottom-of-sign-in">
+                            <div class="remember-me-container">
+                                <input id="check" type="checkbox" class="remember-me-button">
+                                <label for="check" class="remember-me-text">Remember me</label>
+                            </div>
+                            <div class="need-help-container">
+                                <a href="#" class="need-help">Need Help?</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="description-container">
+                        <p class="new-to-netflix">
+                            New to Netflix?
+                            <a href="#">Sign up now.</a>
+                        </p>
+                        <p class="learn-more">
+                            This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                            <a href="#">Learn more.</a>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="footer-content">
+                    <p>
+                        <a href="#">Questions? Contact us.</a>
+                    </p>
+                    <ul class="link-box">
+                        <li>FAQ</li>
+                        <li>Help Center</li>
+                        <li>Terms of Use</li>
+                        <li>Privacy</li>
+                        <li>Cookie Preferences</li>
+                        <li>Corporate Information</li>
+                    </ul>
+
+                    <div class="language-box">
+                        <div class="world-icon"></div>
+                        <select class="language">
+                            <option>Türkçe</option>
+                            <option>English</option>
+                        </select>
+                        <div class="arrow-icon"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./Scripts/script.js"></script>
+</body>
+
+</html>
